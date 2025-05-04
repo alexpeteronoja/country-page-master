@@ -1,0 +1,226 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/hero-image-sm.jpg');
+    background-color: #1b1d1f;
+    color: #d2d5da;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+.overAllContainer {
+    background-color: #282b30;
+    border-radius: 10px;
+    width: 490px;
+}
+
+.position-absolute {
+    bottom: 6.5px;
+}
+
+.search-form {
+    width: 100%;
+    border: none;
+    background-color: #1b1d1f;
+    color: #d2d5da;
+    border-radius: 10px;
+}
+
+.search-form:focus {
+    border: none;
+    outline: none;
+}
+
+.submit-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+/* Sorting Section */
+
+.select-sort {
+    background-color: #282b30;
+    border: 1px solid #6c727f;
+    color: #d2d5da;
+    outline: none;
+    margin-top: 2px;
+}
+
+.btn {
+    color: #d2d5da;
+}
+
+.btn-bg:hover {
+    background-color: #1b1d1f;
+}
+
+.btn-bg {
+    background-color: #1b1d1f;
+}
+
+
+/* CheckBox Section */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #d2d5da;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #d2d5da;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196f3;
+    border: none;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+table {
+    width: 100%;
+}
+
+.flag {
+    width: 60px;
+    border-radius: 3px;
+}
+
+
+/* th {
+    border-bottom: 1px solid #6c727f;
+} */
+
+th,
+td {
+    padding: 12px 15px;
+}
+
+
+/* Country details section */
+
+.detail-container {
+    background-color: #282b30;
+    border-radius: 10px;
+    width: 490px;
+    text-align: center;
+}
+
+.detail-img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.pop-container {
+    background-color: #1b1d1f;
+}
+
+.detail-table th {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: left;
+}
+
+.detail-table td {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: right;
+}
+
+
+/* Border Section */
+
+.border-img {
+    width: 100px;
+}
+
+@media (min-width: 990px) {
+    body {
+        background-image: url('/hero-image.jpg');
+    }
+    .overAllContainer {
+        width: 75rem;
+    }
+}

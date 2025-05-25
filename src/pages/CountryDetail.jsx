@@ -62,7 +62,7 @@ function CountryDetail() {
           <p>{country.name.official}</p>
         </div>
 
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between column-gap-3">
           <div className=" pop-container px-3 py-2 rounded-3 ">
             Population | {country.population}
           </div>

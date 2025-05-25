@@ -127,37 +127,39 @@ function CountryRanking() {
           </div>
 
           <div className="col-lg-6">
-            <table>
-              <thead>
-                <tr>
-                  <th className="border-bottom">Flag</th>
-                  <th className="border-bottom">Name</th>
-                  <th className="border-bottom">Population</th>
-                  <th className="border-bottom">Area(km²)</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filtered.map(country => (
-                  <tr key={country.cca3}>
-                    <td>
-                      <img
-                        className="flag"
-                        src={country.flags.svg}
-                        alt={country.flags.alt}
-                      />
-                    </td>
-                    <td>
-                      {' '}
-                      <Link to={`/country/${country.cca3}`}>
-                        {country.name.common}{' '}
-                      </Link>
-                    </td>
-                    <td>{country.population.toLocaleString()}</td>
-                    <td>{country.area?.toLocaleString()}</td>
+            <div class="table-responsive">
+              <table className="">
+                <thead>
+                  <tr>
+                    <th className="border-bottom">Flag</th>
+                    <th className="border-bottom">Name</th>
+                    <th className="border-bottom">Population</th>
+                    <th className="border-bottom">Area(km²)</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {filtered.map(country => (
+                    <tr key={country.cca3}>
+                      <td>
+                        <img
+                          className="flag"
+                          src={country.flags.svg}
+                          alt={country.flags.alt}
+                        />
+                      </td>
+                      <td>
+                        {' '}
+                        <Link to={`/country/${country.cca3}`}>
+                          {country.name.common}{' '}
+                        </Link>
+                      </td>
+                      <td>{country.population.toLocaleString()}</td>
+                      <td>{country.area?.toLocaleString()}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

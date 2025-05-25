@@ -26,7 +26,7 @@ a:focus {
 .overAllContainer {
     background-color: #282b30;
     border-radius: 10px;
-    width: 490px;
+    width: 300px;
 }
 
 .position-absolute {
@@ -159,9 +159,10 @@ a:focus {
     transform: rotate(45deg);
 }
 
-table {
-    width: 100%;
-}
+
+/* table {
+    width: 80%;
+} */
 
 .flag {
     width: 60px;
@@ -184,7 +185,7 @@ td {
 .detail-container {
     background-color: #282b30;
     border-radius: 10px;
-    width: 490px;
+    width: 340px;
     text-align: center;
 }
 
@@ -222,5 +223,11 @@ td {
     }
     .overAllContainer {
         width: 75rem;
+    }
+    table {
+        width: 100%;
+    }
+    .detail-container {
+        width: 490px;
     }
 }

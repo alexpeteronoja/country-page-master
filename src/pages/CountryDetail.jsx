@@ -45,7 +45,9 @@ function CountryDetail() {
   return (
     <>
       <div className="text-center m-5">
-        <img src={Logo} alt="" />
+        <a href="/">
+          <img src={Logo} alt="" />
+        </a>
       </div>
 
       <div className="p-4 detail-container my-4">

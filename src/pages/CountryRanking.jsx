@@ -98,7 +98,9 @@ function CountryRanking() {
   return (
     <>
       <div className="text-center p-5">
-        <img src="Logo.svg" alt="" />
+        <a href="/">
+          <img src="Logo.svg" alt="" />
+        </a>
       </div>
       <div className="overAllContainer p-lg-5 p-3">
         <Search
